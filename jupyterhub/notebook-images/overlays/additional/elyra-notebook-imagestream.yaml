@@ -1,0 +1,18 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  labels:
+    opendatahub.io/notebook-image: "true"
+  name: elyra-notebook
+spec:
+  lookupPolicy:
+    local: true
+  tags:
+  - annotations:
+      openshift.io/imported-from: docker.io/elyra/elyra
+    from:
+      kind: DockerImage
+      name: docker.io/elyra/elyra:1.0.0.rc0
+    name: "1.0.0.rc0"
+    referencePolicy:
+      type: Source
