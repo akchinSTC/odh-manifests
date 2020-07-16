@@ -18,7 +18,7 @@ spec:
     sourceStrategy:
       from:
         kind: ImageStreamTag
-        name: s2i-elyra-notebook:1.0.0rc0
+        name: s2i-minimal-notebook:3.6
     type: Source
   triggers:
   - type: ConfigChange
