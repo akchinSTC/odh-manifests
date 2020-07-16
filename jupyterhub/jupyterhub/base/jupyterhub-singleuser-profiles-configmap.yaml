@@ -17,6 +17,15 @@ data:
             memory: 2Gi
             cpu: 1
 
+      - name: Elyra Notebook
+        images:
+        - 's2i-elyra-notebook:1.0.0rc0'
+        env:
+          - name: AWS_ACCESS_KEY_ID
+            value: 'minio'
+          - name: AWS_SECRET_ACCESS_KEY
+            value: 'minio123'
+
       - name: Spark Notebook
         images:
         - 's2i-spark-minimal-notebook:3.6'
@@ -54,15 +63,6 @@ data:
               spark_image: 'quay.io/radanalyticsio/openshift-spark-py36:2.4.5-2'
             return:
               SPARK_CLUSTER: 'metadata.name'
-
-      - name: Elyra Notebook
-              images:
-              - 's2i-elyra-notebook:1.0.0rc0'
-              env:
-                - name: AWS_ACCESS_KEY_ID
-                  value: 'minio'
-                - name: AWS_SECRET_ACCESS_KEY
-                  value: 'minio123'
 
       sizes:
       - name: Small
