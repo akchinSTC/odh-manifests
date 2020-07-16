@@ -9,10 +9,10 @@ spec:
     local: true
   tags:
   - annotations:
-      openshift.io/imported-from: quay.io/odh-jupyterhub/s2i-elyra-notebook
+      openshift.io/imported-from: quay.io/akchinstc/s2i-elyra-notebook
     from:
       kind: DockerImage
-      name: quay.io/odh-jupyterhub/s2i-elyra-notebook
+      name: quay.io/akchinstc/s2i-elyra-notebook
     name: "1.0.0rc0"
     referencePolicy:
       type: Source
