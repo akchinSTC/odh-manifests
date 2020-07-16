@@ -12,7 +12,7 @@ spec:
       openshift.io/imported-from: docker.io/elyra/elyra
     from:
       kind: DockerImage
-      name: docker.io/elyra/elyra:1.0.0.rc0
-    name: "1.0.0.rc0"
+      name: docker.io/elyra/elyra:1.0.0rc0
+    name: "1.0.0rc0"
     referencePolicy:
       type: Source
