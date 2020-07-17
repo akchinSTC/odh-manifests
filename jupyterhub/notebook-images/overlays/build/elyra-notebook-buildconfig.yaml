@@ -10,7 +10,7 @@ spec:
       kind: ImageStreamTag
       name: s2i-elyra-notebook:1.0.0rc0
   source:
-    contextDir: elyra-notebook
+    contextDir: minimal-notebook
     git:
       uri: https://github.com/akchinSTC/jupyter-notebooks
     type: Git
