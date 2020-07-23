@@ -12,7 +12,7 @@ spec:
       openshift.io/imported-from: quay.io/akchinstc/s2i-elyra-notebook
     from:
       kind: DockerImage
-      name: quay.io/akchinstc/s2i-elyra-notebook
+      name: quay.io/akchinstc/s2i-elyra-notebook:1.0.0rc0
     name: "1.0.0rc0"
     referencePolicy:
       type: Source
