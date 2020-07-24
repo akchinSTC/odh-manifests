@@ -12,6 +12,6 @@ spec:
     from:
       kind: DockerImage
       name: quay.io/akchinstc/jupyterhub-img:3.0.7-elyra
-    name: latest
+    name: 3.0.7-elyra
     referencePolicy:
       type: Source
