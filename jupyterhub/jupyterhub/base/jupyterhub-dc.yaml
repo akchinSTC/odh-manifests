@@ -58,7 +58,7 @@ spec:
             configMapKeyRef:
               name: jupyterhub-cfg
               key: singleuser_pvc_size
-        image: jupyterhub-img:latest
+        image: jupyterhub-img:3.0.7-elyra
         name: jupyterhub
         ports:
         - containerPort: 8080
@@ -80,7 +80,7 @@ spec:
               key: POSTGRESQL_PASSWORD
         - name: JUPYTERHUB_DATABASE_HOST
           value: jupyterhub-db
-        image: jupyterhub-img:latest
+        image: jupyterhub-img:3.0.7-elyra
         name: wait-for-database
         resources:
           limits:
