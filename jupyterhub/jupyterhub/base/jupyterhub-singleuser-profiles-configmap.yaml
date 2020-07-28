@@ -20,6 +20,9 @@ data:
       - name: Elyra Notebook
         images:
         - 's2i-elyra-notebook:1.0.0rc0'
+        env:
+          - name: JUPYTER_ENABLE_LAB
+            value: 'true'
 
       - name: Spark Notebook
         images:
