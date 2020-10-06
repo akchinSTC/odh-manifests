@@ -58,7 +58,7 @@ spec:
             configMapKeyRef:
               name: jupyterhub-cfg
               key: singleuser_pvc_size
-        image: jupyterhub-img:latest
+        image: jupyterhub-img:3.0.7-b7db22b
         name: jupyterhub
         ports:
         - containerPort: 8080
