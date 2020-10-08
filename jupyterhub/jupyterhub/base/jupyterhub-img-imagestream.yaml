@@ -12,6 +12,6 @@ spec:
     from:
       kind: DockerImage
       name: quay.io/odh-jupyterhub/jupyterhub-img:3.0.7-b7db22b
-    name: 3.0.7-b7db22b
+    name: latest
     referencePolicy:
       type: Source
