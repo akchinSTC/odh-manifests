@@ -16,7 +16,7 @@ spec:
       openshift.io/imported-from: quay.io/akchinstc/s2i-lab-elyra
     from:
       kind: DockerImage
-      name: quay.io/akchinstc/s2i-lab-elyra:v9
-    name: "v9"
+      name: quay.io/akchinstc/s2i-lab-elyra:v10
+    name: "v10"
     referencePolicy:
       type: Source
