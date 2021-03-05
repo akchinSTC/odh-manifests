@@ -13,10 +13,10 @@ spec:
     local: true
   tags:
   - annotations:
-      openshift.io/imported-from: quay.io/thoth-station/s2i-lab-elyra
+      openshift.io/imported-from: quay.io/akchinstc/s2i-lab-elyra
     from:
       kind: DockerImage
-      name: quay.io/thoth-station/s2i-lab-elyra:v0.0.5
-    name: "v0.0.5"
+      name: quay.io/akchinstc/s2i-lab-elyra:v0.0.1
+    name: "v0.0.1"
     referencePolicy:
       type: Source
