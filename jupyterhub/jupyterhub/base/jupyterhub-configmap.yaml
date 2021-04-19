@@ -5,7 +5,7 @@ metadata:
     app: jupyterhub
   name: jupyterhub-cfg
 data:
-  jupyterhub_config.py: "c.OpenShiftOAuthenticator.validate_cert = False"
+  jupyterhub_config.py: "c.OpenShiftOAuthenticator.validate_cert = False\n c.Spawner.http_timeout = 30"
   jupyterhub_admins: "admin"
   gpu_mode: ""
   singleuser_pvc_size: 2Gi
